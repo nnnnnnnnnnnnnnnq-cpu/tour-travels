@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tour and Travels routes, vehicles and contact details.">
+  <title>Your Tour & Travels | Safe & Comfortable Journey</title>
+  <style>
+    :root{--navy:#102b46;--blue:#174d70;--gold:#f3bd59;--ink:#182535;--muted:#667486;--paper:#f5f7fa;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{text-decoration:none;color:inherit}.container{width:min(1100px,92%);margin:auto}
+    header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 15px #0002}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand{font-weight:800;font-size:1.1rem;letter-spacing:.3px}.brand span{color:var(--gold)}
+    nav{display:flex;gap:20px;flex-wrap:wrap;font-size:.95rem}nav a:hover{color:var(--gold)}
+    .hero{background:linear-gradient(120deg,#102b46ee,#174d70cc),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;padding:90px 0 82px}
+    .eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.8rem}
+    h1{font-size:clamp(2.3rem,6vw,4.5rem);line-height:1.08;margin:14px 0;max-width:750px}
+    .hero p{font-size:1.12rem;color:#e4edf5;max-width:600px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:9px;font-weight:700;border:2px solid transparent;cursor:pointer}
+    .btn-gold{background:var(--gold);color:#172a3e}.btn-outline{border-color:#ffffffa8;color:white}.btn:hover{transform:translateY(-1px)}
+    section{padding:68px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 34px}.section-head h2{font-size:clamp(1.8rem,4vw,2.5rem);margin:0 0 8px;color:var(--navy)}.section-head p{margin:0;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:white;border-radius:15px;padding:24px;box-shadow:0 8px 28px #102b460b;border:1px solid #e6ebf0}
+    .card-icon{width:48px;height:48px;display:grid;place-items:center;background:#fff3db;border-radius:12px;font-size:1.5rem;margin-bottom:15px}.card h3{margin:0 0 8px;color:var(--navy)}.card p{margin:0;color:var(--muted)}
+    .route{display:flex;align-items:flex-start;gap:14px}.route .card-icon{flex-shrink:0}
+    .route-line{color:var(--blue);font-weight:800;margin:8px 0}
+    .vehicle-note{font-size:.88rem;margin-top:12px!important}
+    .contact{background:var(--navy);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#d3dfeb}
+    .contact-box{max-width:760px;margin:auto;background:#ffffff0d;border:1px solid #ffffff26;border-radius:18px;padding:30px;text-align:center}.contact-box p{color:#d3dfeb}
+    .contact-actions{justify-content:center}.contact .btn-outline{border-color:#ffffff70}
+    footer{background:#0a1d30;color:#d1dce7;padding:24px 0;font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .hint{font-size:.85rem;color:var(--muted);text-align:center;margin-top:22px}
+    @media(max-width:760px){.nav{align-items:flex-start;flex-direction:column;gap:8px}nav{gap:14px}.hero{padding:65px 0}.grid{grid-template-columns:1fr}.contact-box{padding:22px}section{padding:52px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">🚐 <span>[YOUR TRAVELS NAME]</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#routes">Routes</a><a href="#vehicles">Vehicles</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="eyebrow">Travel with comfort</div>
+      <h1>Your Journey,<br>Our Responsibility.</h1>
+      <p>Reliable travel for your everyday journeys and special trips. Check our routes and contact us directly for timings, availability and pricing.</p>
+      <div class="actions">
+        <a class="btn btn-gold" href="#routes">Explore Routes →</a>
+        <a class="btn btn-outline" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="routes">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Routes</h2>
+        <p>Apne travel routes yahan add karein. Timings aur fare ke liye direct contact karein.</p>
+      </div>
+      <div class="grid">
+        <article class="card route">
+          <div class="card-icon">📍</div>
+          <div><h3>[Starting Place]</h3><div class="route-line">↓ To ↓</div><h3>[Destination]</h3><p>Travel days / timing: [Add details]</p></div>
+        </article>
+        <article class="card route">
+          <div class="card-icon">📍</div>
+          <div><h3>[Starting Place]</h3><div class="route-line">↓ To ↓</div><h3>[Destination]</h3><p>Travel days / timing: [Add details]</p></div>
+        </article>
+        <article class="card route">
+          <div class="card-icon">📍</div>
+          <div><h3>[Starting Place]</h3><div class="route-line">↓ To ↓</div><h3>[Destination]</h3><p>Travel days / timing: [Add details]</p></div>
+        </article>
+      </div>
+      <p class="hint">Tip: Jitne routes hain, utne cards copy karke add kar sakte hain.</p>
+    </div>
+  </section>
+
+  <section id="vehicles" style="background:#edf2f7">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Vehicles</h2>
+        <p>Apni gaadiyon ke naam aur details yahan likhein.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="card-icon">🚗</div><h3>[Car / Sedan]</h3><p>[Seating capacity, AC/non-AC, service details]</p></article>
+        <article class="card"><div class="card-icon">🚙</div><h3>[SUV / Bolero / Scorpio]</h3><p>[Seating capacity, AC/non-AC, service details]</p></article>
+        <article class="card"><div class="card-icon">🚌</div><h3>[Traveller / Bus]</h3><p>[Seating capacity, AC/non-AC, service details]</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head">
+        <h2>Why Travel With Us?</h2>
+        <p>Simple, convenient travel with direct communication.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><div class="card-icon">🛣️</div><h3>Convenient Routes</h3><p>Apne available routes aur travel options yahan explain karein.</p></article>
+        <article class="card"><div class="card-icon">🤝</div><h3>Direct Contact</h3><p>Timings, seat availability aur pricing ke liye seedha humse baat karein.</p></article>
+        <article class="card"><div class="card-icon">🧳</div><h3>Travel Support</h3><p>Apni service ke hisaab se pickup, drop ya trip details yahan likhein.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Contact Us</h2>
+        <p>Route, timings, availability aur pricing ke liye humse direct baat karein.</p>
+      </div>
+      <div class="contact-box">
+        <h3 style="font-size:1.5rem;margin:0">[YOUR TRAVELS NAME]</h3>
+        <p>📞 Phone: [YOUR PHONE NUMBER]<br>📍 Address: [YOUR CITY / OFFICE ADDRESS]</p>
+        <div class="actions contact-actions">
+          <!-- Replace 919876543210 with your WhatsApp number, including country code, digits only. -->
+          <a class="btn btn-gold" href="https://wa.me/919876543210?text=Hello%2C%20I%20need%20travel%20details." target="_blank" rel="noopener">WhatsApp Us</a>
+          <!-- Replace 919876543210 with your phone number, including country code. -->
+          <a class="btn btn-outline" href="tel:+919876543210">Call Now</a>
+        </div>
+        <p style="font-size:.85rem;margin-top:18px">Note: Publish karne se pehle sample phone numbers aur saare bracket waale details replace karein.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <span>© <span id="year"></span> [YOUR TRAVELS NAME]. All rights reserved.</span>
+    <span>Safe travels, every time.</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
