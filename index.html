@@ -1,139 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Tour and Travels routes, vehicles and contact details.">
-  <title>Jain Tour & Travels | Safe & Comfortable Journey</title>
-  <style>
-    :root{--navy:#102b46;--blue:#174d70;--gold:#f3bd59;--ink:#182535;--muted:#667486;--paper:#f5f7fa;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-    a{text-decoration:none;color:inherit}.container{width:min(1100px,92%);margin:auto}
-    header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5;box-shadow:0 3px 15px #0002}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}.brand{font-weight:800;font-size:1.1rem;letter-spacing:.3px}.brand span{color:var(--gold)}
-    nav{display:flex;gap:20px;flex-wrap:wrap;font-size:.95rem}nav a:hover{color:var(--gold)}
-    .hero{background:linear-gradient(120deg,#102b46ee,#174d70cc),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;padding:90px 0 82px}
-    .eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:.8rem}
-    h1{font-size:clamp(2.3rem,6vw,4.5rem);line-height:1.08;margin:14px 0;max-width:750px}
-    .hero p{font-size:1.12rem;color:#e4edf5;max-width:600px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:9px;font-weight:700;border:2px solid transparent;cursor:pointer}
-    .btn-gold{background:var(--gold);color:#172a3e}.btn-outline{border-color:#ffffffa8;color:white}.btn:hover{transform:translateY(-1px)}
-    section{padding:68px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 34px}.section-head h2{font-size:clamp(1.8rem,4vw,2.5rem);margin:0 0 8px;color:var(--navy)}.section-head p{margin:0;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:white;border-radius:15px;padding:24px;box-shadow:0 8px 28px #102b460b;border:1px solid #e6ebf0}
-    .card-icon{width:48px;height:48px;display:grid;place-items:center;background:#fff3db;border-radius:12px;font-size:1.5rem;margin-bottom:15px}.card h3{margin:0 0 8px;color:var(--navy)}.card p{margin:0;color:var(--muted)}
-    .route{display:flex;align-items:flex-start;gap:14px}.route .card-icon{flex-shrink:0}
-    .route-line{color:var(--blue);font-weight:800;margin:8px 0}
-    .vehicle-note{font-size:.88rem;margin-top:12px!important}
-    .contact{background:var(--navy);color:white}.contact .section-head h2{color:white}.contact .section-head p{color:#d3dfeb}
-    .contact-box{max-width:760px;margin:auto;background:#ffffff0d;border:1px solid #ffffff26;border-radius:18px;padding:30px;text-align:center}.contact-box p{color:#d3dfeb}
-    .contact-actions{justify-content:center}.contact .btn-outline{border-color:#ffffff70}
-    footer{background:#0a1d30;color:#d1dce7;padding:24px 0;font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    .hint{font-size:.85rem;color:var(--muted);text-align:center;margin-top:22px}
-    @media(max-width:760px){.nav{align-items:flex-start;flex-direction:column;gap:8px}nav{gap:14px}.hero{padding:65px 0}.grid{grid-template-columns:1fr}.contact-box{padding:22px}section{padding:52px 0}}
-  </style>
-</head>
-<body>
-<header>
-  <div class="container nav">
-    <a class="brand" href="#home">🚐 <span>[YOUR TRAVELS NAME]</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#home">Home</a><a href="#routes">Routes</a><a href="#vehicles">Vehicles</a><a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101d31">
+<meta name="description" content="Jain Tour and Travels, established in 1996 at Madhuban, Giridih, Jharkhand. Jain Teerth Yatra, family travel, wedding bookings and All India journeys.">
+<title>Jain Tour and Travels | Since 1996</title>
+<style>
+:root{--navy:#101d31;--navy2:#203755;--gold:#d7ad62;--pale:#f3dfb7;--cream:#faf7f0;--ink:#202b3c;--muted:#667085;--line:#e8e0d3;--green:#168b51}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;font:16px/1.65 Arial,Helvetica,sans-serif;color:var(--ink)}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 36px));margin:auto}
+.top{background:#09111f;color:#e9dfcb;font-size:.82rem;padding:7px 0}.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.top a{font-weight:bold;color:var(--pale)}
+header{position:sticky;top:0;z-index:10;background:#ffffffef;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:15px}.logo{display:flex;gap:10px;align-items:center;color:var(--navy);font-weight:900;line-height:1.2}.mark{display:grid;place-items:center;background:linear-gradient(140deg,var(--pale),var(--gold));width:44px;height:44px;border-radius:13px}.logo small{display:block;font-size:.67rem;letter-spacing:1.5px;color:#987137;margin-top:5px}.links{display:flex;gap:16px;font-size:.85rem;font-weight:bold;color:#344054;flex-wrap:wrap}.links a:hover{color:#987137}.btn{display:inline-block;padding:12px 17px;border-radius:30px;background:var(--gold);color:var(--navy);font-weight:800;margin:5px 5px 5px 0}.btn.dark{background:var(--navy);color:white}.btn.green{background:var(--green);color:white}
+.hero{color:white;background:linear-gradient(90deg,#0b1423f5 0%,#0b1423d7 48%,#0b142355 100%),url('assets/ac-bus-side.png') center/cover;min-height:590px;display:flex;align-items:center;border-bottom:5px solid var(--gold)}.hero-in{padding:75px 0;max-width:760px}.kicker{font-size:.76rem;text-transform:uppercase;letter-spacing:2px;color:#a57b36;font-weight:900}.hero .kicker{color:var(--pale)}h1{font-size:clamp(2.8rem,6vw,5.3rem);line-height:1.03;letter-spacing:-2px;margin:17px 0 22px}h1 span{color:var(--pale)}.hero p{color:#e3e8ef;font-size:1.05rem;max-width:700px}.hero .hindi{color:var(--pale);font-weight:bold}.strip{background:var(--cream);border-bottom:1px solid var(--line);padding:18px 0}.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.stat{font-weight:800;color:var(--navy);font-size:.9rem}
+section{padding:72px 0}.head{max-width:820px;margin-bottom:30px}.head h2,.split h2,.contact h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.12;letter-spacing:-1px;color:var(--navy);margin:9px 0 15px}.head p,.split p{color:var(--muted)}.split{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:center}.main-photo{width:100%;height:400px;object-fit:cover;border-radius:20px;box-shadow:0 18px 45px #101d311b}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}.feature-grid span{font-weight:800;color:#344054}
+.owner{background:var(--cream)}.owner-photo{width:100%;height:440px;object-fit:cover;object-position:center 25%;border-radius:20px;box-shadow:0 18px 45px #101d311b}.owner-copy{background:white;border:1px solid var(--line);border-radius:18px;padding:28px}.owner-copy p{color:var(--muted)}.pills{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.pills span,.badge{background:#fbf0d9;color:#795a25;border-radius:25px;padding:6px 10px;font-size:.8rem;font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.vehicle{border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 26px #101d310a;background:white;transition:.2s}.vehicle:hover{transform:translateY(-4px);box-shadow:0 18px 40px #101d3115}.vehicle img{width:100%;height:230px;object-fit:cover;background:#e7e7e7}.vbody{padding:19px}.vtop{display:flex;justify-content:space-between;gap:8px;align-items:start}.vbody h3{margin:0 0 10px;color:var(--navy);font-size:1.12rem}.vbody p{color:var(--muted);font-size:.9rem}.vbody .btn{font-size:.85rem}
+.cream{background:#fcfaf5}.states{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.state{padding:19px;border:1px solid var(--line);border-radius:16px;background:white}.state h3{margin:0 0 6px;color:var(--navy)}.state p{margin:0;color:var(--muted)}.callout{margin-top:24px;padding:26px;border-radius:18px;background:var(--navy);color:white}.callout h3{margin:0 0 8px}.callout p{color:#dbe3ed}
+.pickups{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.pickup{padding:22px;border:1px solid var(--line);border-radius:18px;background:white}.pickup h3{color:var(--navy);margin:4px 0 9px}.pickup p{color:var(--muted);font-size:.92rem}.services{background:#fcfaf5}.contact{background:var(--navy);color:white}.contact h2{color:white}.contact p{color:#d4deea}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:36px}.contact-box{background:white;color:var(--ink);padding:25px;border-radius:20px}.contact-box h3{color:var(--navy);font-size:1.5rem;margin:0}.contact-box p{color:var(--muted)}.contact-box .btn{display:block;text-align:center}.detail{padding:13px 0;border-bottom:1px solid #ffffff24;overflow-wrap:anywhere}.detail b{color:var(--pale)}footer{background:#09111f;color:#cbd3df;padding:25px 0 35px}.foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.foot b{color:white}
+@media(max-width:850px){.links{gap:10px;font-size:.78rem}.grid{grid-template-columns:repeat(2,1fr)}.split,.contact-grid{grid-template-columns:1fr}.owner-photo{height:420px}.strip .wrap{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.nav{align-items:flex-start;padding:12px 0}.logo{font-size:.9rem}.links{max-width:60%;justify-content:flex-end;gap:7px}.links a{padding:3px}.hero{min-height:620px;background-image:linear-gradient(180deg,#0b142340,#0b1423f4),url('assets/ac-bus-side.png');background-position:center}.hero-in{padding:210px 0 45px}h1{font-size:clamp(2.65rem,12vw,4rem)}section{padding:55px 0}.grid,.states,.pickups{grid-template-columns:1fr}.vehicle img{height:245px}.main-photo{height:290px}.owner-photo{height:400px}.owner-copy{padding:20px}.top .wrap{justify-content:center}.top .wrap span:first-child{display:none}.strip .wrap{font-size:.8rem}.feature-grid{font-size:.88rem}}
+</style></head><body>
+<div class="top"><div class="wrap"><span>📍 Madhuban, Giridih, Jharkhand 825329</span><span>Established 1996 · Jain Teerth & All India Travel</span><a href="tel:+919798775661">Call +91 97987 75661</a></div></div>
+<header><div class="wrap nav"><a class="logo" href="#home"><span class="mark">JT</span><span>Jain Tour and Travels<small>ESTABLISHED 1996 · TRAVEL WITH TRUST</small></span></a><nav class="links"><a href="#about">About</a><a href="#owner">Owner</a><a href="#vehicles">Vehicles</a><a href="#teerth">Jain Teerth</a><a href="#pickup">Routes</a><a href="#bike-yatra">Bike Yatra</a><a href="#contact">Contact</a></nav></div></header>
 <main>
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="eyebrow">Travel with comfort</div>
-      <h1>Your Journey,<br>Our Responsibility.</h1>
-      <p>Reliable travel for your everyday journeys and special trips. Check our routes and contact us directly for timings, availability and pricing.</p>
-      <div class="actions">
-        <a class="btn btn-gold" href="#routes">Explore Routes →</a>
-        <a class="btn btn-outline" href="#contact">Contact Us</a>
-      </div>
-    </div>
-  </section>
+<section class="hero" id="home"><div class="wrap hero-in"><div class="kicker">Serving since 1996 · Madhuban, Giridih</div><h1>Your Faith.<br>Your Journey.<br><span>Our Commitment.</span></h1><p>Discover sacred Jain Teerth destinations and travel across India with Jain Tour and Travels. Vehicle options for pilgrimage groups, family trips, wedding travel and outstation journeys.</p><p class="hindi">जहाँ हर यात्रा बने आस्था, शांति और आध्यात्मिक अनुभव का संगम।</p><a class="btn" href="https://wa.me/919798775661?text=Namaste%20Jain%20Tour%20and%20Travels%2C%20mujhe%20travel%20enquiry%20karni%20hai." target="_blank" rel="noopener">WhatsApp for Enquiry ↗</a><a class="btn dark" href="#teerth">Explore Jain Teerth</a><p style="font-size:.84rem">Vehicle availability, rates and itinerary are confirmed directly by phone or WhatsApp.</p></div></section>
+<div class="strip"><div class="wrap"><div class="stat">🏅 Serving since 1996</div><div class="stat">🙏 Jain Teerth Yatra</div><div class="stat">🚐 Multiple vehicle options</div><div class="stat">🇮🇳 All India travel</div></div></div>
+<section id="about"><div class="wrap split"><img class="main-photo" src="assets/tata-winger-rear.png" alt="Jain Tour and Travels Tata Winger"><div><div class="kicker">Welcome to Jain Tour and Travels</div><h2>Travel rooted in trust. Journeys made personal.</h2><p>Established in <b>1996</b>, Jain Tour and Travels is based near Terapanthi Kothi main gate in Madhuban, Giridih district, Jharkhand. We help travellers plan Jain pilgrimage, family trips, group tours, wedding transport, local journeys and outstation travel.</p><p>Tell us your pickup location, destination, travel date and passenger count. We can discuss suitable vehicle options and availability with you directly.</p><div class="feature-grid"><span>✓ Jain pilgrimage travel</span><span>✓ Family trips</span><span>✓ Wedding travel</span><span>✓ Group tours</span><span>✓ Local pickup</span><span>✓ All India routes</span></div><a class="btn dark" href="https://wa.me/919798775661?text=Namaste%2C%20I%20want%20to%20discuss%20a%20trip." target="_blank" rel="noopener">Discuss your journey ↗</a></div></div></section>
+<section class="owner" id="owner"><div class="wrap split"><img class="owner-photo" src="assets/vinod-kumar-owner.jpg" alt="Vinod Kumar, owner of Jain Tour and Travels"><div class="owner-copy"><div class="kicker">Meet the owner</div><h2>Vinod Kumar</h2><p><b>Owner · Jain Tour and Travels</b></p><p>With a vision for exceptional travel experiences, Vinod Kumar leads the agency with a commitment to quality, trust and personalized service. Dedicated to creating seamless journeys and unforgettable memories, every trip is thoughtfully planned to deliver comfort, convenience and customer satisfaction.</p><div class="pills"><span>Established 1996</span><span>Personalized assistance</span><span>Madhuban, Giridih</span></div><a class="btn dark" href="tel:+919798775661">☎ Call Vinod Kumar</a><a class="btn" href="https://wa.me/919798775661" target="_blank" rel="noopener">WhatsApp</a></div></div></section>
+<section id="vehicles"><div class="wrap"><div class="head"><div class="kicker">Our fleet</div><h2>Choose the vehicle for your group.</h2><p>Seating capacities are based on the details provided. Confirm the exact vehicle, configuration and availability when enquiring.</p></div><div class="grid">
+<article class="vehicle"><img src="assets/tata-winger-rear.png" alt="Tata Winger"><div class="vbody"><div class="vtop"><h3>Tata Winger</h3><span class="badge">12–17 seats</span></div><p>Group journeys, family travel and pilgrimage tours.</p><a class="btn" href="https://wa.me/919798775661?text=Please%20share%20Tata%20Winger%20availability." target="_blank">Enquire ↗</a></div></article>
+<article class="vehicle"><img src="assets/traveller.png" alt="Traveller passenger van"><div class="vbody"><div class="vtop"><h3>Traveller</h3><span class="badge">12–17 seats</span></div><p>Group tours, family travel and longer routes.</p><a class="btn" href="https://wa.me/919798775661?text=Please%20share%20Traveller%20availability." target="_blank">Enquire ↗</a></div></article>
+<article class="vehicle"><img src="assets/dzire.png" alt="Dzire sedan"><div class="vbody"><div class="vtop"><h3>Maruti Suzuki Dzire</h3><span class="badge">4 seats</span></div><p>Private journeys and smaller travel groups.</p><a class="btn" href="https://wa.me/919798775661?text=Please%20share%20Dzire%20availability." target="_blank">Enquire ↗</a></div></article>
+<article class="vehicle"><img src="assets/innova.png" alt="Toyota Innova"><div class="vbody"><div class="vtop"><h3>Toyota Innova</h3><span class="badge">6–7 seats</span></div><p>Family trips and comfortable outstation journeys.</p><a class="btn" href="https://wa.me/919798775661?text=Please%20share%20Innova%20availability." target="_blank">Enquire ↗</a></div></article>
+<article class="vehicle"><img src="assets/tavera.png" alt="Tavera SUV"><div class="vbody"><div class="vtop"><h3>Tavera</h3><span class="badge">7–9 seats</span></div><p>Ask about availability for your route and group size.</p><a class="btn" href="https://wa.me/919798775661?text=Please%20share%20Tavera%20availability." target="_blank">Enquire ↗</a></div></article>
+<article class="vehicle"><img src="assets/ac-bus-front.png" alt="AC tour bus"><div class="vbody"><div class="vtop"><h3>AC Buses</h3><span class="badge">27–52 seats</span></div><p>For larger groups, events and pilgrimage travel.</p><a class="btn" href="https://wa.me/919798775661?text=Please%20share%20AC%20bus%20availability." target="_blank">Enquire ↗</a></div></article>
+</div></div></section>
+<section class="cream" id="teerth"><div class="wrap"><div class="head"><div class="kicker">Sacred journeys</div><h2>Discover India’s sacred Jain Teerth destinations.</h2><p><b>जहाँ हर यात्रा बने आस्था, शांति और आध्यात्मिक अनुभव का संगम।</b> Choose destinations and contact us to discuss a customized route.</p></div><div class="states">
+<div class="state"><h3>⛰️ Jharkhand</h3><p>Shikharji (Parasnath), Madhuban</p></div><div class="state"><h3>🛕 Bihar</h3><p>Pawapuri, Rajgir, Kundalpur, Champapuri</p></div>
+<div class="state"><h3>🙏 Uttar Pradesh</h3><p>Hastinapur, Ayodhya, Varanasi, Ahichhatra</p></div><div class="state"><h3>🏰 Rajasthan</h3><p>Ranakpur, Dilwara Temples, Nakoda, Shri Mahavirji, Lodurva</p></div>
+<div class="state"><h3>🌄 Gujarat</h3><p>Palitana, Girnar, Taranga, Mahudi, Sankheshwar</p></div><div class="state"><h3>🕊️ Madhya Pradesh</h3><p>Sonagiri, Kundalpur, Bawangaja, Muktagiri, Gopachal</p></div>
+<div class="state"><h3>🌿 Maharashtra</h3><p>Mangi-Tungi, Ellora Jain Caves, Kunthalgiri, Gajpantha</p></div><div class="state"><h3>🏛️ Karnataka</h3><p>Shravanabelagola, Karkala, Moodabidri, Humcha</p></div>
+<div class="state"><h3>🌸 Tamil Nadu</h3><p>Sittanavasal, Thirumalai Jain Hills, Jina Kanchi</p></div><div class="state"><h3>🛕 Odisha</h3><p>Udayagiri, Khandagiri, Ratnagiri</p></div></div>
+<div class="callout"><h3>🙏 Special Jain Teerth Yatra enquiries</h3><p>Shikharji Yatra · Palitana Yatra · Girnar Yatra · All-India Jain Teerth Darshan · Customized group pilgrimages</p><a class="btn" href="https://wa.me/919798775661?text=I%20want%20to%20plan%20a%20Jain%20Teerth%20Yatra.%20Please%20contact%20me." target="_blank">Plan a Teerth Yatra ↗</a></div></div></section>
+<section id="pickup"><div class="wrap"><div class="head"><div class="kicker">Pickup areas & routes</div><h2>Your journey begins at your doorstep.</h2><p>Giridih se lekar poore India tak. Pickup and route availability is subject to prior confirmation.</p></div><div class="pickups">
+<div class="pickup"><h3>📍 Giridih & nearby areas</h3><p>Giridih Railway Station, Bus Stand, Madhuban, Parasnath Railway Station, Dumri, Bagodar, Bengabad, Jamua, Tisri and nearby locations.</p></div>
+<div class="pickup"><h3>🙏 Jain Teerth pickup</h3><p>Shikharji, Madhuban, Parasnath and other pilgrimage destinations according to the agreed itinerary.</p></div>
+<div class="pickup"><h3>🇮🇳 All-India pickup</h3><p>Major railway stations, airports, bus stands, hotels and residential locations, subject to route availability and advance booking.</p></div></div>
+<h2 style="margin-top:32px">Popular outstation journeys</h2><p>Madhuban → Shikharji → Parasnath → Pawapuri → Rajgir → Kundalpur → Champapuri → Palitana → Girnar → Ranakpur → Dilwara Jain Temples → Shravanabelagola</p><p>Other spiritual destinations include Deoghar, Varanasi, Ayodhya, Prayagraj, Gaya, Bodh Gaya, Puri, Bhubaneswar, Kolkata, Patna and Ranchi. Customized destinations across India can be discussed.</p><a class="btn" href="https://wa.me/919798775661?text=Pickup%20location%3A%20%0ADestination%3A%20%0ADate%3A%20%0APassengers%3A%20" target="_blank">Share pickup & destination ↗</a></div></section>
 
-  <section id="routes">
-    <div class="container">
-      <div class="section-head">
-        <h2>Our Routes</h2>
-        <p>Apne travel routes yahan add karein. Timings aur fare ke liye direct contact karein.</p>
-      </div>
-      <div class="grid">
-        <article class="card route">
-          <div class="card-icon">📍</div>
-          <div><h3>[Starting Place]</h3><div class="route-line">↓ To ↓</div><h3>[Destination]</h3><p>Travel days / timing: [Add details]</p></div>
-        </article>
-        <article class="card route">
-          <div class="card-icon">📍</div>
-          <div><h3>[Starting Place]</h3><div class="route-line">↓ To ↓</div><h3>[Destination]</h3><p>Travel days / timing: [Add details]</p></div>
-        </article>
-        <article class="card route">
-          <div class="card-icon">📍</div>
-          <div><h3>[Starting Place]</h3><div class="route-line">↓ To ↓</div><h3>[Destination]</h3><p>Travel days / timing: [Add details]</p></div>
-        </article>
-      </div>
-      <p class="hint">Tip: Jitne routes hain, utne cards copy karke add kar sakte hain.</p>
-    </div>
-  </section>
+<section id="bike-yatra" class="cream"><div class="wrap"><div class="split">
+<div>
+<div class="kicker">Special local experience</div>
+<h2>Bike se Parasnath Pahad Yatra</h2>
+<p><strong>मधुबन से पारसनाथ पहाड़ की यात्रा के लिए बाइक सुविधा की जानकारी भी लें।</strong></p>
+<p>Jain Tour and Travels se Parasnath Pahad ke liye bike se chadhai / pahadi yatra ke baare mein enquiry karein. Availability, permitted route, timing, charges aur current local rules pehle phone par confirm kar lein.</p>
+<p>Safety ke liye local guidance follow karein, helmet pehnein aur sirf allowed route par hi travel karein. Pahad par har jagah bike le jaana allowed ho, yeh assume na karein.</p>
+<a class="btn" href="https://wa.me/919798775661?text=Namaste%2C%20mujhe%20Parasnath%20Pahad%20ke%20liye%20bike%20yatra%20ki%20availability%2C%20route%20aur%20charges%20ki%20jankari%20chahiye." target="_blank" rel="noopener">Bike Yatra Enquiry ↗</a>
+<a class="btn dark" href="tel:+919798775661">Call to Confirm</a>
+</div>
+<div>
+<img class="main-photo" src="assets/tata-winger-rear.png" alt="Madhuban and Parasnath travel enquiry">
+<p style="font-size:.82rem">Please confirm whether bike service is available on your requested date and which sections of the route permit motor vehicles.</p>
+</div>
+</div></div></section>
 
-  <section id="vehicles" style="background:#edf2f7">
-    <div class="container">
-      <div class="section-head">
-        <h2>Our Vehicles</h2>
-        <p>Apni gaadiyon ke naam aur details yahan likhein.</p>
-      </div>
-      <div class="grid">
-        <article class="card"><div class="card-icon">🚗</div><h3>[Car / Sedan]</h3><p>[Seating capacity, AC/non-AC, service details]</p></article>
-        <article class="card"><div class="card-icon">🚙</div><h3>[SUV / Bolero / Scorpio]</h3><p>[Seating capacity, AC/non-AC, service details]</p></article>
-        <article class="card"><div class="card-icon">🚌</div><h3>[Traveller / Bus]</h3><p>[Seating capacity, AC/non-AC, service details]</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <h2>Why Travel With Us?</h2>
-        <p>Simple, convenient travel with direct communication.</p>
-      </div>
-      <div class="grid">
-        <article class="card"><div class="card-icon">🛣️</div><h3>Convenient Routes</h3><p>Apne available routes aur travel options yahan explain karein.</p></article>
-        <article class="card"><div class="card-icon">🤝</div><h3>Direct Contact</h3><p>Timings, seat availability aur pricing ke liye seedha humse baat karein.</p></article>
-        <article class="card"><div class="card-icon">🧳</div><h3>Travel Support</h3><p>Apni service ke hisaab se pickup, drop ya trip details yahan likhein.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="section-head">
-        <h2>Contact Us</h2>
-        <p>Route, timings, availability aur pricing ke liye humse direct baat karein.</p>
-      </div>
-      <div class="contact-box">
-        <h3 style="font-size:1.5rem;margin:0">[YOUR TRAVELS NAME]</h3>
-        <p>📞 Phone: [YOUR PHONE NUMBER]<br>📍 Address: [YOUR CITY / OFFICE ADDRESS]</p>
-        <div class="actions contact-actions">
-          <!-- Replace 919876543210 with your WhatsApp number, including country code, digits only. -->
-          <a class="btn btn-gold" href="https://wa.me/919876543210?text=Hello%2C%20I%20need%20travel%20details." target="_blank" rel="noopener">WhatsApp Us</a>
-          <!-- Replace 919876543210 with your phone number, including country code. -->
-          <a class="btn btn-outline" href="tel:+919876543210">Call Now</a>
-        </div>
-        <p style="font-size:.85rem;margin-top:18px">Note: Publish karne se pehle sample phone numbers aur saare bracket waale details replace karein.</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container footer-inner">
-    <span>© <span id="year"></span> [YOUR TRAVELS NAME]. All rights reserved.</span>
-    <span>Safe travels, every time.</span>
-  </div>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+<section class="services" id="services"><div class="wrap"><div class="head"><div class="kicker">Our services</div><h2>Comfort, convenience and care — every mile.</h2></div><div class="grid">
+<div class="vehicle"><div class="vbody"><h3>🙏 Jain Teerth Yatra</h3><p>Shikharji, Madhuban and pilgrimage destinations across India.</p></div></div><div class="vehicle"><div class="vbody"><h3>👨‍👩‍👧 Family trips</h3><p>Vehicle options for family holidays and private journeys.</p></div></div><div class="vehicle"><div class="vbody"><h3>🚌 Group travel</h3><p>Winger, Traveller and bus options for groups.</p></div></div><div class="vehicle"><div class="vbody"><h3>💐 Wedding travel</h3><p>Transport enquiries for wedding events and guests.</p></div></div><div class="vehicle"><div class="vbody"><h3>📍 Local pickup</h3><p>Giridih, Madhuban, Parasnath and nearby areas.</p></div></div><div class="vehicle"><div class="vbody"><h3>🛣️ Outstation & All India</h3><p>Customized long-distance routes, subject to confirmation.</p></div></div></div></div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid"><div><div class="kicker" style="color:#f3dfb7">Contact & enquiries</div><h2>Let’s plan your next journey.</h2><p>Contact us for Jain Teerth Yatra, vehicle availability, wedding travel, family trips and outstation journeys.</p><div class="detail"><b>Owner</b><br>Vinod Kumar</div><div class="detail"><b>Phone / WhatsApp</b><br><a href="tel:+919798775661">+91 97987 75661</a></div><div class="detail"><b>Office address</b><br>Madhuban near Terapanthi Kothi main gate, Giridih district, Jharkhand 825329</div><div class="detail"><b>Enquiry hours</b><br>7:00 AM – 10:00 PM, every day</div><div class="detail"><b>Facebook</b><br><a href="https://www.facebook.com/jaintourtravels.madhuban/" target="_blank" rel="noopener">Jain Tour and Travels Madhuban ↗</a></div></div>
+<div class="contact-box"><h3>Send a travel enquiry</h3><p>Message your pickup, destination, date, passenger count and preferred vehicle. Rates and availability are confirmed directly.</p><a class="btn green" href="https://wa.me/919798775661?text=Namaste%20Jain%20Tour%20and%20Travels.%0APickup%3A%20%0ADestination%3A%20%0ADate%3A%20%0APassengers%3A%20%0AVehicle%3A%20" target="_blank" rel="noopener">WhatsApp trip details</a><a class="btn dark" href="tel:+919798775661">Call +91 97987 75661</a><a class="btn" href="https://share.google/pcnjFSzrZkIp7onTU" target="_blank" rel="noopener">Directions to office ↗</a><p style="font-size:.8rem">Informational website only: no online payment or instant booking. Please confirm route, rates and vehicle availability directly.</p></div></div></section>
+</main><footer><div class="wrap foot"><span><b>Jain Tour and Travels</b> · Established 1996</span><span>Madhuban, Giridih, Jharkhand</span><span>© <span id="year"></span> Jain Tour and Travels</span></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
